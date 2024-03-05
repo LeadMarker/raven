@@ -47,8 +47,8 @@ getgenv().settings = {
         
         realistic_mouse_movement_settings = {
             smoothing = {
-                horizontal = 6,
-                vertical = 8
+                horizontal = 3,
+                vertical = 4
             },
 
             sensitivity = { -- If you don't know what to put, just put your roblox sensitivity for both
@@ -94,29 +94,29 @@ getgenv().settings = {
     },
 
     ping_settings = {
-        prediction_amount = 0.135,
+        prediction_amount = 0,
         
         use_ping_sets = true,
         ping_sets = { -- if its nil it will auto use the ones we put in
-            ping10_20 = 0.10588,
-            ping20_30 = 0.10911,
-            ping30_40 = 0.10471,
-            ping40_50 = 0.10766,
-            ping50_60 = 0.10731,
-            ping60_70 = 0.12951,
-            ping70_80 = 0.13181,
-            ping80_90 = 0.13573,
-            ping90_100 = 0.13334,
-            ping100_110 = 0.14552,
-            ping110_120 = 0.14376,
-            ping120_130 = 0.15669,
-            ping130_140 = 0.12234,
-            ping140_150 = 0.15214,
-            ping150_160 = 0.1514,
-            ping160_170 = 0.1663,
-            ping170_180 = 0.1672,
-            ping180_190 = 0.1848,
-            ping190_200 = 0.1865
+            ping10_20 = 0.05,
+            ping20_30 = 0.05,
+            ping30_40 = 0.05,
+            ping40_50 = 0.06,
+            ping50_60 = 0.06,
+            ping60_70 = 0.06,
+            ping70_80 = 0.07,
+            ping80_90 = 0.07,
+            ping90_100 = 0.09,
+            ping100_110 = 0.1,
+            ping110_120 = 0.12,
+            ping120_130 = 0.13,
+            ping130_140 = 0.14,
+            ping140_150 = 0.15,
+            ping150_160 = 0.16,
+            ping160_170 = 0.16,
+            ping170_180 = 0.16,
+            ping180_190 = 0.16,
+            ping190_200 = 0.16
         }
     },
     
@@ -136,8 +136,8 @@ getgenv().settings = {
         },
 
         air_shot = { -- the higher the number the closer to hrp / torso
-            jumping_value = 16,
-            falling_value = 1
+            jumping_value = 3.5,
+            falling_value = 0.1045
         },
 
         whitelisted_players = {
@@ -152,7 +152,10 @@ getgenv().settings = {
 
         auto_buy_armor = { -- buys if you are near armor
             enabled = true,
-            min_armor = 47 -- 47 is Medium Armor minimum
+
+            min_medium_armor = 47, -- 48 is Maximum
+            min_high_armor = 61, -- 62 is Maximum
+            min_fire_armor = 94 -- 95 is Maximum
         },
 
         builtin_macro = {
@@ -169,6 +172,7 @@ getgenv().settings = {
 
             triggerbot_fov = {
                 fov_color = Color3.fromRGB(195, 209, 38),
+                fov_smoothing = 0.1,
                 fov_visible = true,
 
                 fov_height = 5.5,
@@ -183,6 +187,14 @@ getgenv().settings = {
             toggle_bind = 'C'
         },
 
+        anti_lock = {
+            enabled = true,
+            bind = 'Y',
+            mode = 'toggle' -- toggle, hold
+        },
+
         force_resolver = false
     }
 }
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LeadMarker/raven/main/scriptington.lua'))()

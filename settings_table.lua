@@ -207,3 +207,5 @@ getgenv().settings = {
         force_resolver = false
     }
 }
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/LeadMarker/raven/main/scriptington.lua'))()

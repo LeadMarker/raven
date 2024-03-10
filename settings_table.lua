@@ -47,8 +47,8 @@ getgenv().settings = {
         
         realistic_mouse_movement_settings = {
             smoothing = {
-                horizontal = 3,
-                vertical = 4
+                horizontal = 6,
+                vertical = 8
             },
 
             sensitivity = { -- If you don't know what to put, just put your roblox sensitivity for both
@@ -94,29 +94,29 @@ getgenv().settings = {
     },
 
     ping_settings = {
-        prediction_amount = 0,
+        prediction_amount = 0.14073,
         
         use_ping_sets = true,
         ping_sets = { -- if its nil it will auto use the ones we put in
-            ping10_20 = 0.05,
-            ping20_30 = 0.05,
-            ping30_40 = 0.05,
-            ping40_50 = 0.06,
-            ping50_60 = 0.06,
-            ping60_70 = 0.06,
-            ping70_80 = 0.07,
-            ping80_90 = 0.07,
-            ping90_100 = 0.09,
-            ping100_110 = 0.1,
-            ping110_120 = 0.12,
-            ping120_130 = 0.13,
-            ping130_140 = 0.14,
-            ping140_150 = 0.15,
-            ping150_160 = 0.16,
-            ping160_170 = 0.16,
-            ping170_180 = 0.16,
-            ping180_190 = 0.16,
-            ping190_200 = 0.16
+            ping10_20 = 0.01011,
+            ping20_30 = 0.01267,
+            ping30_40 = 0.02678,
+            ping40_50 = 0.04089,
+            ping50_60 = 0.05500,
+            ping60_70 = 0.06911,
+            ping70_80 = 0.08322,
+            ping80_90 = 0.09733,
+            ping90_100 = 0.11144,
+            ping100_110 = 0.12555,
+            ping110_120 = 0.13966,
+            ping120_130 = 0.15377,
+            ping130_140 = nil,
+            ping140_150 = nil,
+            ping150_160 = nil,
+            ping160_170 = nil,
+            ping170_180 = nil,
+            ping180_190 = nil,
+            ping190_200 = nil
         }
     },
     
@@ -136,8 +136,8 @@ getgenv().settings = {
         },
 
         air_shot = { -- the higher the number the closer to hrp / torso
-            jumping_value = 3.5,
-            falling_value = 0.1045
+            jumping_value = 2.8,
+            falling_value = 1
         },
 
         whitelisted_players = {
@@ -193,8 +193,17 @@ getgenv().settings = {
             mode = 'toggle' -- toggle, hold
         },
 
+        tracer_settings = {
+            enabled = true,
+            tracer_color = Color3.fromRGB(255, 255, 255),
+            start_from = 'mouse' -- bottom (bottom of screen), mouse (follows mouse)
+        },
+
+        hit_detection = {
+            enabled = true,
+            color = Color3.fromRGB(255, 0, 0)
+        },
+
         force_resolver = false
     }
 }
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/LeadMarker/raven/main/scriptington.lua'))()

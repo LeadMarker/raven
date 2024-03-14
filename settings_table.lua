@@ -7,7 +7,7 @@ getgenv().settings = {
     target_type = 'hold', -- toggle, hold
 
     triggerbot_type = 'hold', -- toggle, hold
-    esp_toggle_bind = 'P',
+    toggle_all_visuals = 'P',
 
     show_target = false,
     show_nearest_point = false,
@@ -177,6 +177,13 @@ getgenv().settings = {
             delay = 0.010
         },
 
+        no_clip_macro = {
+            enabled = true,
+            bind = 'L',
+            mode = 'hold', -- toggle, hold
+            slot = '0'
+        },
+
         triggerbot = {
             enabled = true,
             bind = 'z',
@@ -217,6 +224,30 @@ getgenv().settings = {
         hit_detection = {
             enabled = true,
             color = Color3.fromRGB(255, 0, 0)
+        },
+
+        auto_settings = {
+            low_gfx = false,
+            mute_boombox = true
+        },
+
+        inventory_organizer = {
+            enabled = true,
+            bind = 'B',
+            sort_food = true,
+
+            assortment = {
+                [1] = '',
+                [2] = '',
+                [3] = '',
+                [4] = '',
+                [5] = '',
+                [6] = '',
+                [7] = '',
+                [8] = '',
+                [9] = '',
+                [10] = ''
+            }
         },
 
         force_resolver = false

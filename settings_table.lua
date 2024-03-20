@@ -47,13 +47,13 @@ getgenv().settings = {
         
         realistic_mouse_movement_settings = {
             smoothing = {
-                horizontal = 1,
-                vertical = 1
+                horizontal = 8,
+                vertical = 6
             },
 
             sensitivity = { -- If you don't know what to put, just put your roblox sensitivity for both
-                x_axis = 1,
-                y_axis = 1
+                x_axis = 0.25,
+                y_axis = 0.25
             },
         },
 
@@ -63,7 +63,7 @@ getgenv().settings = {
                 second = 'Bounce'
             },
 
-            sensitivity = 0.2
+            sensitivity = 0.20015
         },
 
         cam_fov = {
@@ -106,29 +106,29 @@ getgenv().settings = {
     },
 
     ping_settings = {
-        prediction_amount = 0,
+        prediction_amount = 0.14073,
         
         use_ping_sets = true,
         ping_sets = { -- if its nil it will auto use the ones we put in
-            ping10_20 = nil,
-            ping20_30 = nil,
-            ping30_40 = nil,
-            ping40_50 = nil,
-            ping50_60 = nil,
-            ping60_70 = nil,
-            ping70_80 = nil,
-            ping80_90 = nil,
-            ping90_100 = nil,
-            ping100_110 = nil,
-            ping110_120 = nil,
-            ping120_130 = nil,
-            ping130_140 = nil,
-            ping140_150 = nil,
-            ping150_160 = nil,
-            ping160_170 = nil,
-            ping170_180 = nil,
-            ping180_190 = nil,
-            ping190_200 = nil
+            ping10_20 = 0.12588,
+            ping20_30 = 0.05500,
+            ping30_40 = 0.06911,
+            ping40_50 = 0.10017,
+            ping50_60 = 0.1229,
+            ping60_70 = 0.1229,
+            ping70_80 = 0.128,
+            ping80_90 = 0.13702,
+            ping90_100 = 0.13712,
+            ping100_110 = 0.13722,
+            ping110_120 = 0.13736,
+            ping120_130 = 0.13812,
+            ping130_140 = 0.150,
+            ping140_150 = 0.15214,
+            ping150_160 = 0.1514,
+            ping160_170 = 0.1663,
+            ping170_180 = 0.1672,
+            ping180_190 = 0.1848,
+            ping190_200 = 0.1865
         }
     },
     
@@ -148,8 +148,8 @@ getgenv().settings = {
         },
 
         air_shot = { -- the higher the number the closer to hrp / torso
-            jumping_value = 3,
-            falling_value = 0.1
+            jumping_value = 3.2,
+            falling_value = 0.07
         },
 
         whitelisted_players = {
@@ -181,7 +181,24 @@ getgenv().settings = {
             enabled = true,
             bind = 'L',
             mode = 'hold', -- toggle, hold
-            slot = '0'
+            slot = '2'
+        },
+
+        auto_buy_weapon = {
+            ['[Revolver]'] = {
+                enabled = true,
+                min_ammo = 150,
+            },
+            
+            ['[Double-Barrel SG]'] = {
+                enabled = true,
+                min_ammo = 40,
+            },
+
+            ['[TacticalShotgun]'] = {
+                enabled = true,
+                min_ammo = 40
+            },
         },
 
         triggerbot = {
@@ -195,8 +212,8 @@ getgenv().settings = {
                 fov_smoothing = 1,
                 fov_visible = true,
 
-                fov_height = 6,
-                fov_width = 4
+                fov_height = 5.5,
+                fov_width = 2.5
             }
         },
 
@@ -212,7 +229,7 @@ getgenv().settings = {
         anti_lock = {
             enabled = true,
             bind = 'V',
-            mode = 'hold' -- toggle, hold
+            mode = 'toggle' -- toggle, hold
         },
 
         tracer_settings = {
@@ -230,17 +247,17 @@ getgenv().settings = {
             low_gfx = false,
             mute_boombox = true
         },
-
+        
         inventory_organizer = {
             enabled = true,
             bind = 'B',
             sort_food = true,
 
             assortment = {
-                [1] = '',
-                [2] = '',
-                [3] = '',
-                [4] = '',
+                [1] = '[Knife]',
+                [2] = '[TacticalShotgun]',
+                [3] = '[Double-Barrel SG]',
+                [4] = '[Revolver]',
                 [5] = '',
                 [6] = '',
                 [7] = '',
@@ -250,7 +267,7 @@ getgenv().settings = {
             }
         },
 
-        force_resolver = false
+        force_resolver = true
     }
 }
 

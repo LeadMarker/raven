@@ -212,8 +212,8 @@ getgenv().settings = {
                 fov_smoothing = 1,
                 fov_visible = true,
 
-                fov_height = 5.5,
-                fov_width = 2.5
+                fov_height = 6,
+                fov_width = 4
             }
         },
 

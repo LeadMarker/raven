@@ -221,6 +221,8 @@ getgenv().settings = {
             enabled = true,
             toggle_bind = 'C',
             snipe_detection = true, -- if true it will automatically enable esp on players who joined you.
+            only_target_marked_raid_players = false, -- Aimbots will only target raid marked players
+            grab_player_radius = 200, -- The size of how far players can be from your mouse to select the player.
 
             esp_color = Color3.fromRGB(15, 23, 255),
             friendly_color = Color3.fromRGB(0, 255, 0)
@@ -229,6 +231,7 @@ getgenv().settings = {
         anti_lock = {
             enabled = true,
             bind = 'V',
+            visualizer = 'top_left', -- mouse, top_left
             mode = 'toggle' -- toggle, hold
         },
 

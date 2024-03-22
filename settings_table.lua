@@ -174,7 +174,7 @@ getgenv().settings = {
             enabled = true,
             bind = 'x',
             mode = 'hold', -- toggle, hold
-            delay = 0.010
+            delay = 0.020
         },
 
         no_clip_macro = {

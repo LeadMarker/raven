@@ -231,6 +231,7 @@ getgenv().settings = {
         anti_lock = {
             enabled = true,
             bind = 'V',
+            delay = 0.005,
             visualizer = 'top_left', -- mouse, top_left
             mode = 'toggle' -- toggle, hold
         },

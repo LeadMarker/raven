@@ -13,3 +13,7 @@ drawed.Outline = true
 drawed.Position = Vector2.new(1920/2, 1080/2)
 drawed.Visible = true
 drawed.Color = Color3.fromRGB(0, 255, 0)
+
+task.wait(10)
+
+drawed:Remove()

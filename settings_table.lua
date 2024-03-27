@@ -149,7 +149,7 @@ getgenv().settings = {
 
         air_shot = { -- the higher the number the closer to hrp / torso
             jumping_value = 3.2,
-            falling_value = 0.07
+            falling_value = 1
         },
 
         whitelisted_players = {
